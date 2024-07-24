@@ -2,17 +2,20 @@
 #define THREEDSHAPE_H
 
 class ThreeDShape{
-    float volume;
-    int numSides; 
-    float sides[100];
+    protected:
+        float volume;
+        int numSides; 
+        float* sides;
     public:
         ThreeDShape();
         ThreeDShape(float, int, float*);
         ThreeDShape(const ThreeDShape&);
+        ~ThreeDShape();
+        ThreeDShape& operator=(const ThreeDShape& rhs);
 
         float getVolume();
         int getNumSides();
-        void addSide(float);
+        void addSide(float&);
         float* getSides();
         void calculateVolume();
 };
