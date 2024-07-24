@@ -11,4 +11,12 @@ class Pyramid: public ThreeDShape{
         Pyramid();
         Pyramid(int, int, int, float, int, float*);
         Pyramid(const Pyramid& rhs);
+
+        int getLenght();
+        int getWidth();
+        int getHeight();
+
+        void setLenght(int);
+        void setWidth(int);
+        void setHeight(int);
 };

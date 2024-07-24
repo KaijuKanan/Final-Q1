@@ -16,3 +16,21 @@ Pyramid::Pyramid(const Pyramid& rhs){
 void Pyramid::calculateVolume(){
     volume = (lenght * width * heigh)/3;
 }
+int Pyramid::getLenght(){
+    return lenght;
+}
+int Pyramid::getWidth(){
+    return width;
+}
+int Pyramid::getHeight(){
+    return height;
+}
+void Pyramid::setLenght(int l){
+    lenght = l;
+}
+void Pyramid::setWidth(int w){
+    width = w;
+}
+void Pyramid::setHeight(int h){
+    height = h;
+}
