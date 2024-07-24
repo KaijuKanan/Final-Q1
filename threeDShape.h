@@ -17,6 +17,6 @@ class ThreeDShape{
         int getNumSides();
         void addSide(float&);
         float* getSides();
-        void calculateVolume();
+        virutal void calculateVolume()=0;
 };
 #endif
