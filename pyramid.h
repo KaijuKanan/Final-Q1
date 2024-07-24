@@ -20,3 +20,4 @@ class Pyramid: public ThreeDShape{
         void setWidth(int);
         void setHeight(int);
 };
+#endif

@@ -7,9 +7,9 @@ class ThreeDShape{
         int numSides; 
         float* sides;
     public:
-        ThreeDShape();
-        ThreeDShape(float, int, float*);
-        ThreeDShape(const ThreeDShape&);
+        //ThreeDShape();
+        //ThreeDShape(float, int, float*);
+        //ThreeDShape(const ThreeDShape&);
         ~ThreeDShape();
         ThreeDShape& operator=(const ThreeDShape& rhs);
 

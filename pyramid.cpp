@@ -4,11 +4,16 @@ Pyramid::Pyramid():ThreeDShape(){
     lenght = 0;
     width = 0;
     height = 0;
+    numSides = 0;
+    volume = calculateVolume();
 }
 Pyramid::Pyramid(int l, int w, int h, float v, int ns, float* s):ThreeDShape(float v, int n, float* s){
     lenght = l;
     width = w;
     height = w;
+    volume = calculateVolume();
+    numSides = ns;
+    
 }
 Pyramid::Pyramid(const Pyramid& rhs){
 
